@@ -15,9 +15,6 @@ export class TimePicker extends BasePage{
         this.getMessage = page.frameLocator('#storybook-preview-iframe').locator('span.eos-message__content');
         this.getSelectedTime = page.frameLocator('#storybook-preview-iframe').locator('input#basic_timepicker')
     }
-    async goto(url) {
-        await this.page.goto(url);
-    }
     async drop_down_arrow_click() {
         await this.getDropDownListArrow.click();
     }
